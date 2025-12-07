@@ -1,0 +1,25 @@
+name: Build unsigned IPA (for re-signing)
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Archive (no signing)
+        run: |
+          xcodebuild -project tkp.xcodeproj -scheme tkp -configuration Release -archivePath build/tkp.xcarchive archive CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" DEVELOPMENT_TEAM=""
+      - name: Create unsigned ipa
+        run: |
+          mkdir -p export/Payload
+          cp -R build/tkp.xcarchive/Products/Applications/*.app export/Payload/ || true
+          (cd export && zip -r ../tkp_unsigned.zip Payload)
+      - name: Upload unsigned zip
+        uses: actions/upload-artifact@v4
+        with:
+          name: tkp-unsigned
+          path: tkp_unsigned.zip
