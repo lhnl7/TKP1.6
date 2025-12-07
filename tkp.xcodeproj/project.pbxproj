@@ -1,0 +1,48 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 60;
+	objects = {
+A = { isa = PBXProject; attributes = { LastUpgradeCheck = 1600; }; buildConfigurationList = R; compatibilityVersion = "Xcode 16.0"; developmentRegion = en; mainGroup = C; productRefGroup = D; projectDirPath = ""; targets = (E); };
+C = { isa = PBXGroup; children = (D, H); sourceTree = "<group>"; };
+D = { isa = PBXGroup; children = (I); name = Products; sourceTree = "<group>"; };
+H = { isa = PBXGroup; children = (J,K,L,M,N,O,P,Q,R,S,T,U,V); path = tkp; sourceTree = "<group>"; };
+I = { isa = PBXFileReference; explicitFileType = wrapper.application; path = tkp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+J = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tkpApp.swift; sourceTree = "<group>"; };
+K = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+L = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalPager.swift; sourceTree = "<group>"; };
+M = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerWithHUD.swift; sourceTree = "<group>"; };
+N = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASLoader.swift; sourceTree = "<group>"; };
+O = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCacheManager.swift; sourceTree = "<group>"; };
+P = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebDAVSetupView.swift; sourceTree = "<group>"; };
+Q = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRootView.swift; sourceTree = "<group>"; };
+R = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerContainer.swift; sourceTree = "<group>"; };
+S = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+T = { isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+U = { isa = PBXFileReference; lastKnownFileType = text; path = PkgInfo; sourceTree = "<group>"; };
+V = { isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+E = { isa = PBXNativeTarget; buildConfigurationList = RCFG; buildPhases = (SOURCES,RESOURCES,FRAMEWORKS); name = tkp; productName = tkp; productReference = I; productType = "com.apple.product-type.application"; };
+SOURCES = { isa = PBXSourcesBuildPhase; files = (BF_J,BF_K,BF_L,BF_M,BF_N,BF_O,BF_P,BF_Q,BF_R,BF_S); };
+BF_J = { isa = PBXBuildFile; fileRef = J; };
+BF_K = { isa = PBXBuildFile; fileRef = K; };
+BF_L = { isa = PBXBuildFile; fileRef = L; };
+BF_M = { isa = PBXBuildFile; fileRef = M; };
+BF_N = { isa = PBXBuildFile; fileRef = N; };
+BF_O = { isa = PBXBuildFile; fileRef = O; };
+BF_P = { isa = PBXBuildFile; fileRef = P; };
+BF_Q = { isa = PBXBuildFile; fileRef = Q; };
+BF_R = { isa = PBXBuildFile; fileRef = R; };
+BF_S = { isa = PBXBuildFile; fileRef = S; };
+RESOURCES = { isa = PBXResourcesBuildPhase; files = (BF_T,BF_U,BF_V); };
+BF_T = { isa = PBXBuildFile; fileRef = T; };
+BF_U = { isa = PBXBuildFile; fileRef = U; };
+BF_V = { isa = PBXBuildFile; fileRef = V; };
+FRAMEWORKS = { isa = PBXFrameworksBuildPhase; files = (); };
+RCFG = { isa = XCConfigurationList; buildConfigurations = (CFG_DEBUG,CFG_RELEASE); defaultConfigurationName = Release; };
+CFG_DEBUG = { isa = XCBuildConfiguration; name = Debug; buildSettings = { INFOPLIST_FILE = tkp/Info.plist; PRODUCT_BUNDLE_IDENTIFIER = com.weizhong.tkp; PRODUCT_NAME = tkp; EXECUTABLE_NAME = tkp; SWIFT_VERSION = 5.0; IPHONEOS_DEPLOYMENT_TARGET = 15.0; ALWAYS_SEARCH_USER_PATHS = NO; }; };
+CFG_RELEASE = { isa = XCBuildConfiguration; name = Release; buildSettings = { INFOPLIST_FILE = tkp/Info.plist; PRODUCT_BUNDLE_IDENTIFIER = com.weizhong.tkp; PRODUCT_NAME = tkp; EXECUTABLE_NAME = tkp; SWIFT_VERSION = 5.0; IPHONEOS_DEPLOYMENT_TARGET = 15.0; ALWAYS_SEARCH_USER_PATHS = NO; }; };
+R = { isa = XCConfigurationList; buildConfigurations = (RCFG); defaultConfigurationName = Release; };
+	};
+	rootObject = A;
+}
